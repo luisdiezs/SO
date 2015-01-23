@@ -1,0 +1,10 @@
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\bin\Debug\SO-LuisDiezS.exe.config
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\bin\Debug\SO-LuisDiezS.exe
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\bin\Debug\SO-LuisDiezS.pdb
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO-LuisDiezS.csprojResolveAssemblyReference.cache
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.FCFS.resources
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.Form1.resources
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.Properties.Resources.resources
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO-LuisDiezS.csproj.GenerateResource.Cache
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO-LuisDiezS.exe
+c:\users\luis diez s\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO-LuisDiezS.pdb
