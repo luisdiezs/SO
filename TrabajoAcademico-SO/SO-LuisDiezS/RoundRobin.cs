@@ -60,7 +60,7 @@ namespace SO_LuisDiezS
             duracion_proceso_actual = 0;
             index_proceso_actual = 0;
             completado = 0;
-            rafaga = 1;
+            rafaga = 0;
             cuanto = Convert.ToInt16(this.mtb_cuanto.Text);
             estado = "en espera";
             this.lb_cola.Items.Add(this.dgv_procesos.Rows[0].Cells["proceso"].Value.ToString());
@@ -97,46 +97,42 @@ namespace SO_LuisDiezS
                         Thread.Sleep(1000);
                         tiempo_actual++;
 
-
-                        /*
-                         * VERIFICAR PROCESOS QUE SE AGREGAN A LA COLA
-                         * SOLO EN EL PRIMER RECORRIDO (RAFAGA) SE DEBE VALIDAR EL TIEMPO DE LLEGADA
-                         */
-
                         /* agregando procesos a la cola según tiempo de llegada */
-                        for (int n = 0; n < this.dgv_procesos.Rows.Count - 1; n++)
+                        if (rafaga == 1)
                         {
-                            if (Convert.ToInt16(this.dgv_procesos.Rows[n].Cells["llegada"].Value.ToString()) == tiempo_actual && this.dgv_procesos.Rows[n].Cells["estado"].Value.ToString() == "en espera")
+                            for (int n = 0; n < this.dgv_procesos.Rows.Count - 1; n++)
                             {
-                                this.lb_cola.Items.Add(this.dgv_procesos.Rows[n].Cells["proceso"].Value.ToString());
-                                this.lb_cola.Update();
-                                break;
+                                if (Convert.ToInt16(this.dgv_procesos.Rows[n].Cells["llegada"].Value.ToString()) == tiempo_actual && this.dgv_procesos.Rows[n].Cells["estado"].Value.ToString() == "en espera")
+                                {
+                                    this.lb_cola.Items.Add(this.dgv_procesos.Rows[n].Cells["proceso"].Value.ToString());
+                                    this.lb_cola.Update();
+                                    break;
+                                }
                             }
                         }
 
                         /* evaluando duración del proceso */
                         duracion_proceso_actual = Convert.ToInt16(this.dgv_procesos.Rows[index_proceso_actual].Cells["duracion"].Value.ToString());
-                        tiempo_restante = duracion_proceso_actual - p;
+                        tiempo_restante = duracion_proceso_actual - 1;
                         this.dgv_procesos.Rows[index_proceso_actual].Cells["duracion"].Value = tiempo_restante;
                         this.dgv_procesos.Update();
-
-                        if (tiempo_restante == 0)
-                        {
-                            estado = "terminado";
-                            break;
-                        }
 
                         if (p == 2 && tiempo_restante > 0)
                         {
                             this.lb_cola.Items.Add(this.dgv_procesos.Rows[index_proceso_actual].Cells["proceso"].Value.ToString());
                             this.lb_cola.Update();
                         }
+                        else if (tiempo_restante == 0)
+                        {
+                            estado = "terminado";
+                            break;
+                        }
                     }
 
                     this.dgv_procesos.Rows[index_proceso_actual].Cells["estado"].Value = estado;
                     this.dgv_procesos.Update();
 
-                    Thread.Sleep(1000);
+                    Thread.Sleep(1500);
                 } while (this.lb_cola.Items.Count > 0);
 
                 /* verificando que todos los procesos esten terminados */

@@ -30,10 +30,18 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.operacionesYControlDeProcesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.roundRobinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.porPrioridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fIFoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colocaciónDeAlmacenamientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.primerAjusteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mejorAjusteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.peorAjusteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.planificaciónDeDiscosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fCFSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.roundRobinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sSTFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sJFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nivelesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,31 +60,14 @@
             // operacionesYControlDeProcesosToolStripMenuItem
             // 
             this.operacionesYControlDeProcesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.roundRobinToolStripMenuItem});
+            this.roundRobinToolStripMenuItem,
+            this.porPrioridadToolStripMenuItem,
+            this.fIFoToolStripMenuItem,
+            this.sJFToolStripMenuItem,
+            this.nivelesToolStripMenuItem});
             this.operacionesYControlDeProcesosToolStripMenuItem.Name = "operacionesYControlDeProcesosToolStripMenuItem";
             this.operacionesYControlDeProcesosToolStripMenuItem.Size = new System.Drawing.Size(203, 20);
             this.operacionesYControlDeProcesosToolStripMenuItem.Text = "Operaciones y Control de Procesos";
-            // 
-            // colocaciónDeAlmacenamientoToolStripMenuItem
-            // 
-            this.colocaciónDeAlmacenamientoToolStripMenuItem.Name = "colocaciónDeAlmacenamientoToolStripMenuItem";
-            this.colocaciónDeAlmacenamientoToolStripMenuItem.Size = new System.Drawing.Size(189, 20);
-            this.colocaciónDeAlmacenamientoToolStripMenuItem.Text = "Colocación de Almacenamiento";
-            // 
-            // planificaciónDeDiscosToolStripMenuItem
-            // 
-            this.planificaciónDeDiscosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fCFSToolStripMenuItem});
-            this.planificaciónDeDiscosToolStripMenuItem.Name = "planificaciónDeDiscosToolStripMenuItem";
-            this.planificaciónDeDiscosToolStripMenuItem.Size = new System.Drawing.Size(140, 20);
-            this.planificaciónDeDiscosToolStripMenuItem.Text = "Planificación de Discos";
-            // 
-            // fCFSToolStripMenuItem
-            // 
-            this.fCFSToolStripMenuItem.Name = "fCFSToolStripMenuItem";
-            this.fCFSToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.fCFSToolStripMenuItem.Text = "FCFS";
-            this.fCFSToolStripMenuItem.Click += new System.EventHandler(this.fCFSToolStripMenuItem_Click);
             // 
             // roundRobinToolStripMenuItem
             // 
@@ -84,6 +75,81 @@
             this.roundRobinToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.roundRobinToolStripMenuItem.Text = "Round Robin";
             this.roundRobinToolStripMenuItem.Click += new System.EventHandler(this.roundRobinToolStripMenuItem_Click);
+            // 
+            // porPrioridadToolStripMenuItem
+            // 
+            this.porPrioridadToolStripMenuItem.Name = "porPrioridadToolStripMenuItem";
+            this.porPrioridadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.porPrioridadToolStripMenuItem.Text = "Por Prioridad";
+            // 
+            // fIFoToolStripMenuItem
+            // 
+            this.fIFoToolStripMenuItem.Name = "fIFoToolStripMenuItem";
+            this.fIFoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fIFoToolStripMenuItem.Text = "FIFO";
+            this.fIFoToolStripMenuItem.Click += new System.EventHandler(this.fIFoToolStripMenuItem_Click);
+            // 
+            // colocaciónDeAlmacenamientoToolStripMenuItem
+            // 
+            this.colocaciónDeAlmacenamientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.primerAjusteToolStripMenuItem,
+            this.mejorAjusteToolStripMenuItem,
+            this.peorAjusteToolStripMenuItem});
+            this.colocaciónDeAlmacenamientoToolStripMenuItem.Name = "colocaciónDeAlmacenamientoToolStripMenuItem";
+            this.colocaciónDeAlmacenamientoToolStripMenuItem.Size = new System.Drawing.Size(189, 20);
+            this.colocaciónDeAlmacenamientoToolStripMenuItem.Text = "Colocación de Almacenamiento";
+            // 
+            // primerAjusteToolStripMenuItem
+            // 
+            this.primerAjusteToolStripMenuItem.Name = "primerAjusteToolStripMenuItem";
+            this.primerAjusteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.primerAjusteToolStripMenuItem.Text = "Primer Ajuste";
+            // 
+            // mejorAjusteToolStripMenuItem
+            // 
+            this.mejorAjusteToolStripMenuItem.Name = "mejorAjusteToolStripMenuItem";
+            this.mejorAjusteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.mejorAjusteToolStripMenuItem.Text = "Mejor Ajuste";
+            // 
+            // peorAjusteToolStripMenuItem
+            // 
+            this.peorAjusteToolStripMenuItem.Name = "peorAjusteToolStripMenuItem";
+            this.peorAjusteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.peorAjusteToolStripMenuItem.Text = "Peor Ajuste";
+            // 
+            // planificaciónDeDiscosToolStripMenuItem
+            // 
+            this.planificaciónDeDiscosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fCFSToolStripMenuItem,
+            this.sSTFToolStripMenuItem});
+            this.planificaciónDeDiscosToolStripMenuItem.Name = "planificaciónDeDiscosToolStripMenuItem";
+            this.planificaciónDeDiscosToolStripMenuItem.Size = new System.Drawing.Size(140, 20);
+            this.planificaciónDeDiscosToolStripMenuItem.Text = "Planificación de Discos";
+            // 
+            // fCFSToolStripMenuItem
+            // 
+            this.fCFSToolStripMenuItem.Name = "fCFSToolStripMenuItem";
+            this.fCFSToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fCFSToolStripMenuItem.Text = "FCFS";
+            this.fCFSToolStripMenuItem.Click += new System.EventHandler(this.fCFSToolStripMenuItem_Click);
+            // 
+            // sSTFToolStripMenuItem
+            // 
+            this.sSTFToolStripMenuItem.Name = "sSTFToolStripMenuItem";
+            this.sSTFToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sSTFToolStripMenuItem.Text = "SSTF";
+            // 
+            // sJFToolStripMenuItem
+            // 
+            this.sJFToolStripMenuItem.Name = "sJFToolStripMenuItem";
+            this.sJFToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sJFToolStripMenuItem.Text = "SJF";
+            // 
+            // nivelesToolStripMenuItem
+            // 
+            this.nivelesToolStripMenuItem.Name = "nivelesToolStripMenuItem";
+            this.nivelesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nivelesToolStripMenuItem.Text = "2 Niveles";
             // 
             // Form1
             // 
@@ -111,6 +177,14 @@
         private System.Windows.Forms.ToolStripMenuItem planificaciónDeDiscosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fCFSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem roundRobinToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem porPrioridadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fIFoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem primerAjusteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mejorAjusteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peorAjusteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sSTFToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sJFToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nivelesToolStripMenuItem;
     }
 }
 

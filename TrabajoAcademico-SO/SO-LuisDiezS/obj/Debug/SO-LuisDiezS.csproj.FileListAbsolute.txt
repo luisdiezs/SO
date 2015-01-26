@@ -19,3 +19,4 @@ D:\Usuarios\Lucho10\Documents\Visual Studio 2013\Projects\TrabajoAcademico-SO\SO
 D:\Usuarios\Lucho10\Documents\Visual Studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO-LuisDiezS.csproj.GenerateResource.Cache
 D:\Usuarios\Lucho10\Documents\Visual Studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\bin\Debug\SO-LuisDiezS.exe
 D:\Usuarios\Lucho10\Documents\Visual Studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\bin\Debug\SO-LuisDiezS.pdb
+C:\Users\Luis Diez S\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.RoundRobin.resources

@@ -21,6 +21,7 @@ namespace SO_LuisDiezS
         {
             FCFS formFCFS = new FCFS();
             formFCFS.MdiParent = this;
+            formFCFS.Text = "FCFS (First Come, First Served)";
             formFCFS.Show();
         }
 
@@ -29,6 +30,14 @@ namespace SO_LuisDiezS
             RoundRobin formRoundRobin = new RoundRobin();
             formRoundRobin.MdiParent = this;
             formRoundRobin.Show();
+        }
+
+        private void fIFoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FCFS formFCFS = new FCFS();
+            formFCFS.MdiParent = this;
+            formFCFS.Text = "FIFO (First In, First Out)";
+            formFCFS.Show();
         }
     }
 }
