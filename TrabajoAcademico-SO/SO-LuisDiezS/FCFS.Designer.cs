@@ -123,7 +123,7 @@
             // lb_proceso
             // 
             this.lb_proceso.FormattingEnabled = true;
-            this.lb_proceso.Location = new System.Drawing.Point(233, 31);
+            this.lb_proceso.Location = new System.Drawing.Point(236, 28);
             this.lb_proceso.Name = "lb_proceso";
             this.lb_proceso.Size = new System.Drawing.Size(49, 134);
             this.lb_proceso.TabIndex = 3;
@@ -131,7 +131,7 @@
             // lb_tllegada
             // 
             this.lb_tllegada.FormattingEnabled = true;
-            this.lb_tllegada.Location = new System.Drawing.Point(321, 31);
+            this.lb_tllegada.Location = new System.Drawing.Point(321, 28);
             this.lb_tllegada.Name = "lb_tllegada";
             this.lb_tllegada.Size = new System.Drawing.Size(49, 134);
             this.lb_tllegada.TabIndex = 5;
@@ -139,7 +139,7 @@
             // lb_duracion
             // 
             this.lb_duracion.FormattingEnabled = true;
-            this.lb_duracion.Location = new System.Drawing.Point(409, 31);
+            this.lb_duracion.Location = new System.Drawing.Point(409, 28);
             this.lb_duracion.Name = "lb_duracion";
             this.lb_duracion.Size = new System.Drawing.Size(49, 134);
             this.lb_duracion.TabIndex = 7;
@@ -147,7 +147,7 @@
             // lb_tinicio
             // 
             this.lb_tinicio.FormattingEnabled = true;
-            this.lb_tinicio.Location = new System.Drawing.Point(497, 32);
+            this.lb_tinicio.Location = new System.Drawing.Point(497, 29);
             this.lb_tinicio.Name = "lb_tinicio";
             this.lb_tinicio.Size = new System.Drawing.Size(49, 134);
             this.lb_tinicio.TabIndex = 9;
@@ -155,7 +155,7 @@
             // lb_tfin
             // 
             this.lb_tfin.FormattingEnabled = true;
-            this.lb_tfin.Location = new System.Drawing.Point(585, 32);
+            this.lb_tfin.Location = new System.Drawing.Point(585, 29);
             this.lb_tfin.Name = "lb_tfin";
             this.lb_tfin.Size = new System.Drawing.Size(49, 134);
             this.lb_tfin.TabIndex = 11;

@@ -26,7 +26,9 @@ namespace SO_LuisDiezS
 
         private void roundRobinToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            RoundRobin formRoundRobin = new RoundRobin();
+            formRoundRobin.MdiParent = this;
+            formRoundRobin.Show();
         }
     }
 }
