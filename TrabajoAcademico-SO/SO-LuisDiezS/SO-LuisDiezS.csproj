@@ -56,6 +56,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PorPrioridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PorPrioridad.Designer.cs">
+      <DependentUpon>PorPrioridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoundRobin.cs">
@@ -64,11 +70,20 @@
     <Compile Include="RoundRobin.Designer.cs">
       <DependentUpon>RoundRobin.cs</DependentUpon>
     </Compile>
+    <Compile Include="SJF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SJF.Designer.cs">
+      <DependentUpon>SJF.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FCFS.resx">
       <DependentUpon>FCFS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PorPrioridad.resx">
+      <DependentUpon>PorPrioridad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +96,9 @@
     </Compile>
     <EmbeddedResource Include="RoundRobin.resx">
       <DependentUpon>RoundRobin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SJF.resx">
+      <DependentUpon>SJF.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

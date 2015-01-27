@@ -150,6 +150,7 @@ namespace SO_LuisDiezS
                 }
 
             } while (completado == 0);
+            MessageBox.Show("Se terminó de ejecutar los procesos", "Finalizado", MessageBoxButtons.OK);
         }
     }
 }

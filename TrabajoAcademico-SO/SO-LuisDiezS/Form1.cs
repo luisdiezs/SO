@@ -39,5 +39,19 @@ namespace SO_LuisDiezS
             formFCFS.Text = "FIFO (First In, First Out)";
             formFCFS.Show();
         }
+
+        private void porPrioridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PorPrioridad formPorPrioridad = new PorPrioridad();
+            formPorPrioridad.MdiParent = this;
+            formPorPrioridad.Show();
+        }
+
+        private void sJFToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SJF formSJF = new SJF();
+            formSJF.MdiParent = this;
+            formSJF.Show();
+        }
     }
 }
