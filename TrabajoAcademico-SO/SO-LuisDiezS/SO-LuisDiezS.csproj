@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DosNiveles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DosNiveles.Designer.cs">
+      <DependentUpon>DosNiveles.cs</DependentUpon>
+    </Compile>
     <Compile Include="FCFS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="SJF.Designer.cs">
       <DependentUpon>SJF.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DosNiveles.resx">
+      <DependentUpon>DosNiveles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FCFS.resx">
       <DependentUpon>FCFS.cs</DependentUpon>
     </EmbeddedResource>

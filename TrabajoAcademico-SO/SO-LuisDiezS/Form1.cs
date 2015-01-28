@@ -53,5 +53,12 @@ namespace SO_LuisDiezS
             formSJF.MdiParent = this;
             formSJF.Show();
         }
+
+        private void nivelesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DosNiveles formDosNiveles = new DosNiveles();
+            formDosNiveles.MdiParent = this;
+            formDosNiveles.Show();
+        }
     }
 }

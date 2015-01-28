@@ -101,7 +101,8 @@
             // 
             this.nivelesToolStripMenuItem.Name = "nivelesToolStripMenuItem";
             this.nivelesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.nivelesToolStripMenuItem.Text = "2 Niveles";
+            this.nivelesToolStripMenuItem.Text = "Dos Niveles";
+            this.nivelesToolStripMenuItem.Click += new System.EventHandler(this.nivelesToolStripMenuItem_Click);
             // 
             // colocaciónDeAlmacenamientoToolStripMenuItem
             // 

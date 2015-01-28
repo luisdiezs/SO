@@ -22,3 +22,4 @@ D:\Usuarios\Lucho10\Documents\Visual Studio 2013\Projects\TrabajoAcademico-SO\SO
 C:\Users\Luis Diez S\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.RoundRobin.resources
 C:\Users\Luis Diez S\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.PorPrioridad.resources
 C:\Users\Luis Diez S\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.SJF.resources
+C:\Users\Luis Diez S\documents\visual studio 2013\Projects\TrabajoAcademico-SO\SO-LuisDiezS\obj\Debug\SO_LuisDiezS.DosNiveles.resources

@@ -21,7 +21,7 @@ namespace SO_LuisDiezS
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            int llegada, duracion, prioridad;
+            int llegada, duracion;
             String nombre_proceso, estado_proceso;
 
             if (!String.IsNullOrEmpty(mtb_llegada.Text) && !String.IsNullOrEmpty(mtb_duracion.Text))
